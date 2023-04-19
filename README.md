@@ -1,2 +1,2 @@
 # FunWithAI
-Trying out some fun things
+Trying out some fun things with AI
