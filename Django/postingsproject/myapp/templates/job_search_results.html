@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Postings</title>
+</head>
+<body>
+    {% if job_postings %}
+    <ul>
+    {% for posting in job_postings %}
+        <li><a href="{{ posting.url }}">{{ posting.title }}</a></li>
+    {% endfor %}
+    </ul>
+    {% else %}
+    <p>No job postings found.</p>
+    {% endif %}
+</body>
+</html>
