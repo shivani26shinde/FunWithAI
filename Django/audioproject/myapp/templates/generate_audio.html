@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Audio Blog - Generated Audio</title>
+</head>
+<body>
+	<h1>Generated Audio</h1>
+	<audio controls>
+		<source src="{{ audio_blog.audio_file.url }}" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<p>Text: {{ audio_blog.text }}</p>
+	<p>Tempo: {{ audio_blog.tempo }}</p>
+	<p><a href="{% url 'audio_blog' %}">Generate Another Audio</a></p>
+</body>
+</html>
